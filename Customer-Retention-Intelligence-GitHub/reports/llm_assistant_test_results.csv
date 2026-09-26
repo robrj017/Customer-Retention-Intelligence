@@ -1,0 +1,37 @@
+question,customer_id,answer
+What does SHAP explain?,,"SHAP (SHapley Additive exPlanations) describes **how each individual feature contributed to a specific model prediction**.  
+
+* **Positive SHAP values** indicate that the feature pushed the prediction toward a higher churn probability.  
+* **Negative SHAP values** indicate that the feature pushed the prediction toward a lower churn probability.  
+
+SHAP therefore explains the model’s behavior for a given customer, but it does **not** establish that any feature causes churn."
+What is the churn risk of this customer?,7590-VHVEG,"The model assigns this customer a **churn probability of 80.18 %** (risk score 80.18), which places them in the **High‑risk** category (any probability ≥ 60 % is considered high risk).  
+
+As noted in the project FAQ, a high risk score indicates a higher likelihood of churn but does **not** guarantee that the customer will churn."
+What should a retention analyst review for this high-risk customer?,7590-VHVEG,"**Suggested review areas for this high‑risk, short‑tenure customer (ID 7590‑VHVEG)**  
+
+1. **Onboarding & Setup**  
+   - Verify that the initial service activation (DSL) was completed without errors.  
+   - Check for any reported issues during the first month (e.g., connectivity problems, equipment installation).
+
+2. **Plan Understanding**  
+   - Confirm the customer fully understands the month‑to‑month DSL plan and the associated monthly charge (\$29.85).  
+   - Review any recent communications or documentation sent at sign‑up.
+
+3. **Support Experience**  
+   - Look for recent support tickets, calls, or chat interactions that may indicate unresolved technical problems or dissatisfaction.  
+
+4. **Technical Service Review** (per the Service and Support Review framework)  
+   - **Internet Service:** DSL performance metrics, outage history, and speed complaints.  
+   - **Technical Support:** Frequency and outcome of support contacts.  
+   - **Additional Services:** If the customer has opted for online security, backup, device protection, or streaming add‑ons, assess usage and any reported issues.
+
+5. **Payment Method Check**  
+   - Since the payment method is an electronic check, verify that the first payment processed correctly and that there are no pending billing concerns.
+
+6. **Model Explanation (if available)**  
+   - Review the model’s top risk contributors for this record (e.g., short tenure, month‑to‑month contract, payment method) to prioritize the above checks.
+
+**Decision‑support suggestion:**  
+Use the findings from the items above to determine whether a targeted outreach (e.g., a personalized onboarding call, a technical health check, or an offer of"
+What is considered a high-risk customer in this project?,,"In this project a **high‑risk customer** is any customer whose predicted churn probability is **60 % or higher**. This threshold is used to flag customers for further review, but it does not guarantee that the customer will churn."

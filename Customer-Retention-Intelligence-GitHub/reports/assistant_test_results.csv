@@ -1,0 +1,78 @@
+question,customer_id,answer
+What does SHAP explain?,,"## What does SHAP explain?
+SHAP explains how individual features influenced a model prediction.
+Positive SHAP values push the prediction toward higher churn probability.
+Negative SHAP values push it toward lower churn probability.
+
+## Explainability
+SHAP is used to understand how individual features influence model predictions.
+A positive SHAP value means that the feature pushed the model prediction toward
+higher churn probability for the customer being explained.
+A negative SHAP value means that the feature pushed the model prediction
+toward lower churn propability.
+SHAP describes model behavior. It does not establish that a feature causes
+churn.
+
+## Does SHAP prove that a feature causes churn?
+No
+SHAP explains the behaviour of the model. It does not establish causation."
+What is the churn risk for this customer?,7590-VHVEG,"Customer 7590-VHVEG has a model-predicted churn probability of 80.18%, with a High risk level.
+
+The customer has a Month-to-month contract,tenure of 1 months, and monthly charges of $29.85.
+
+## What is a high-risk customer?
+In this project, a customer with predicted churn probability of 60% or above is
+classified as high risk.
+
+## Does a high risk score mean the customer will definitely churn?
+No.
+A high score means the model estimates a higher probability of churn. It is
+not a guarantee.
+
+## 1. High Churn Risk
+When a customer has a high model-predicted churn probability:
+1. Review the customer's account profile.
+2. Review contract type and tenure.
+3. Review service configuration.
+4. Review monthly charges.
+5. Review payment method.
+6. Check whether technical-support or service-related issues are visible in
+the customer profile.
+7. Use the model explanation to identify the features that contributed most to
+the prediction.
+The purpose is to prioritize customers for human review."
+What should a retention analyst review for a high-risk customer?,,"## 3. Short-Tenure Customers
+Customers with short tenure can be reviewed for:
+- Early onboarding experience
+- Service setup issues
+- Technical problems
+- Understanding of the selected plan
+- Support experience
+The model may identify short-tenure customers as high-risk, but the reason
+for the risk should be checked using the customer's other information and model explanation.
+
+## What should an employee do with a high-risk customer?
+Review the customer's profile, examine the model's main risk contributors,
+and then decide what account or service review is appropriate.
+
+## 4. Higher Monthly Charges
+When monthly charges are relatively high, a retention review can include:
+- Current plan
+- Service included in the plan
+- Optional Services
+- Customer usage
+- Available plan
+The model's prediction should not be interpreted as evidence that price alone
+caused the customer's churn risk."
+What is a high-risk customer?,,"## What is a high-risk customer?
+In this project, a customer with predicted churn probability of 60% or above is
+classified as high risk.
+
+## What should an employee do with a high-risk customer?
+Review the customer's profile, examine the model's main risk contributors,
+and then decide what account or service review is appropriate.
+
+## Does a high risk score mean the customer will definitely churn?
+No.
+A high score means the model estimates a higher probability of churn. It is
+not a guarantee."

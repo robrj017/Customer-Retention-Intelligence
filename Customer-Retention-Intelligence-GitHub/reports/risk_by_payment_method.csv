@@ -1,0 +1,5 @@
+PaymentMethod,Customers,AverageRisk,HighRiskCustomers
+Bank transfer (automatic),1544,26.44,222
+Credit card (automatic),1522,27.93,173
+Electronic check,2365,60.53,1414
+Mailed check,1612,33.62,300

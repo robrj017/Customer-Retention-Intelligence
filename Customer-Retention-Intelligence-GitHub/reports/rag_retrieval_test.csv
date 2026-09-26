@@ -1,0 +1,16 @@
+question,document,similarity
+What does SHAP explain?,faq.md,0.6932
+What does SHAP explain?,model_documentation.md,0.6817
+What does SHAP explain?,faq.md,0.5248
+What does a high churn score mean?,faq.md,0.6237
+What does a high churn score mean?,feature_dictionary.md,0.556
+What does a high churn score mean?,feature_dictionary.md,0.545
+What should we review for month-to-month customers?,retention_pplaybook.md,0.7385
+What should we review for month-to-month customers?,retention_pplaybook.md,0.5405
+What should we review for month-to-month customers?,retention_pplaybook.md,0.525
+What features are used by the churn model?,model_documentation.md,0.6492
+What features are used by the churn model?,feature_dictionary.md,0.6296
+What features are used by the churn model?,feature_dictionary.md,0.6046
+How shoud a high-risk customer be reviewed,faq.md,0.6946
+How shoud a high-risk customer be reviewed,retention_pplaybook.md,0.6487
+How shoud a high-risk customer be reviewed,retention_pplaybook.md,0.5943
