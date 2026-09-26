@@ -16,7 +16,6 @@ from tensorflow.keras.models import load_model
 BASE_DIR = Path(__file__).resolve().parent.parent
 REPORT_DIR = BASE_DIR / "reports"
 RAG_DIR = BASE_DIR / "rag"
-DATA_DIR = BASE_DIR / "data"
 MODEL_DIR = BASE_DIR / "models"
 
 
@@ -34,11 +33,6 @@ def load_customer_risk():
     )
 
 
-@st.cache_data
-def load_customer_data():
-    return pd.read_csv(
-        DATA_DIR / "customer_churn.csv"
-    )
 
 
 @st.cache_data
@@ -70,7 +64,6 @@ def load_churn_model():
 
 
 customer_risk = load_customer_risk()
-customer_data = load_customer_data()
 chunks_df = load_rag_chunks()
 chunk_embeddings = load_embeddings()
 embedding_model = load_embedding_model()
@@ -622,3 +615,4 @@ elif page == "Retention Assistant":
                 "information. It does not establish causal "
                 "relationships."
             )
+
