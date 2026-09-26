@@ -2,6 +2,8 @@
 import os
 import json
 from pathlib import Path
+import base64
+import zipfile
 
 import numpy as np
 import pandas as pd
@@ -56,11 +58,26 @@ def load_embedding_model():
     )
 
 
+MODEL_FILE = MODEL_DIR / "advanced_churn_model.keras"
+MODEL_B64_FILE = MODEL_DIR / "advanced_churn_model.b64"
+DECODED_MODEL_FILE = Path("/tmp/advanced_churn_model.keras")
+
+
 @st.cache_resource
 def load_churn_model():
-    return load_model(
-        MODEL_DIR / "advanced_churn_model.keras"
-    )
+    if (
+        not DECODED_MODEL_FILE.exists()
+        or not zipfile.is_zipfile(DECODED_MODEL_FILE)
+    ):
+        encoded = MODEL_B64_FILE.read_text(
+            encoding="utf-8"
+        )
+
+        DECODED_MODEL_FILE.write_bytes(
+            base64.b64decode(encoded)
+        )
+
+    return load_model(DECODED_MODEL_FILE)
 
 
 customer_risk = load_customer_risk()
