@@ -5,4 +5,4 @@ plotly
 sentence-transformers
 groq
 torch
-tensorflow
+requests
