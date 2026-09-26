@@ -1,4 +1,7 @@
 import os
+
+os.environ["KERAS_BACKEND"] = "torch"
+
 import json
 import base64
 import zipfile
